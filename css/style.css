@@ -1,6 +1,119 @@
+html {
+  background-image: url('images/medusatextback.gif');
+  background-repeat: no-repeat;
+}
 
-  body{
-    padding: 0;
-    margin: 0;
-  }
+body {
+  padding: 0;
+  margin: 0;
+}
 
+section {
+  text-align: center;
+  margin: 70px auto;
+}
+
+.gorgons div {
+  height: 200px;
+  width: 240px;
+  border-radius: 8px;
+  margin: 0 20px;
+  display: inline-block;
+}
+
+.stoneTwo {
+  background-image: url('http://i.imgur.com/NNjN1zm.gif');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.twoLoad {
+  background-image: url('http://i.imgur.com/iboW7Kh.gif');
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 100px;
+  padding-left: 300px;
+  cursor: pointer;
+}
+
+.stoneUser {
+  background-image: url('http://i.imgur.com/ooH7aAK.gif');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.userLoad {
+  background-image: url('http://i.imgur.com/eBOZCIC.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.stoneFive {
+  background-image: url('http://i.imgur.com/zfmHPwT.gif');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.fiveLoad {
+  background-image: url('http://i.imgur.com/lQISRvg.gif');
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+.stoneThree {
+  background-image: url('http://i.imgur.com/6N8Bmaq.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.threeLoad {
+  background-image: url('http://i.imgur.com/IGjKV3x.gif');
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.stoneFour {
+  background-image: url('http://i.imgur.com/XqvazqV.gif');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.fourLoad {
+  background-image: url('http://i.imgur.com/CGxDqvl.gif');
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.welcome {
+  color: #ffffff;
+  background: rgba(111, 111, 999, 0.65);
+  height: 445px;
+  width: 45%;
+  border-radius: 25px;
+  position: absolute;
+  z-index: 2;
+  left: 25%;
+  top: 10%;
+  text-align: justify;
+  font-size: 2em;
+  padding: 0 30px;
+  font-family: "Helvetica", san-serif;
+  cursor: pointer;
+  text-shadow: 1px 1px 30px rgba(000, 000, 999, .9);
+}
+
+.welcome h1 {
+  font-size: 1.3em;
+  text-align: center;
+  text-shadow: 1px 1px 40px rgba(000, 000, 999, .8);
+  font-family: 'Playfair Display SC', serif;
+}
+
+.welcome p,
+h1 {
+  margin: 50px auto;
+}
