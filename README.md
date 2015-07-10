@@ -13,7 +13,7 @@
   
   
   
-   The user tries to win the game by not being elimintaed when picking another Gorgon. A medusa can only be eliminated when each Medusa's selection is equal to eachother.  
+   The user tries to win the game by not being eliminated when picking another Gorgon. A medusa can only be eliminated when each Medusa's selection is equal to eachother.  
    If you choose a Medusa and a Medusa chooses you, you and that Medusa are out.
 
 ### MVP  
