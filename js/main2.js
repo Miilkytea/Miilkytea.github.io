@@ -16,7 +16,6 @@ $("#welcomeIntro").on('click', function() {
 
 /////////BUTTONS (FOUR OTHER MEDUSAS)
 $('#1').on('click', function() {
-  if ($("#0").hasClass(stoneClasses[0])) return;
   playGame(this.id);
   console.log(medusas);
   checkForStone();
@@ -24,21 +23,18 @@ $('#1').on('click', function() {
 });
 
 $('#2').on('click', function() {
-  if ($("#0").hasClass(stoneClasses[0])) return;
   playGame(this.id);
   console.log(medusas);
   checkForStone();
 });
 
 $('#3').on('click', function() {
-  if ($("#0").hasClass(stoneClasses[0])) return;
   playGame(this.id);
   console.log(medusas);
   checkForStone();
 });
 
 $('#4').on('click', function() {
-  if ($("#0").hasClass(stoneClasses[0])) return;
   playGame(this.id);
   console.log(medusas);
   checkForStone();
@@ -52,13 +48,7 @@ var playGame = function(choice) {
   console.log("playGame called");
   medusas[0] = choice;
   for (var i = 1; i < medusas.length; i++) {
-    if ($('#' + i).hasClass(stoneClasses[i])) {
-      medusas[i] = null;
-      console.log(i, medusas[i]);
-    } else {
-      makeChoice(i);
-      console.log(i, medusas[i]);
-    }
+    makeChoice(i);
   }
 
 };
@@ -67,7 +57,7 @@ var makeChoice = function(numMedusa) {
   console.log("makeChoice called");
   var pick = numMedusa;
   while (pick === numMedusa) {
-    pick = Math.floor(Math.random() * 5)
+    pick = Math.floor(Math.random() * 5);
   }
   //THE SELECTION IS CONVERTED TO A STRING IN THE ARRAY
   medusas[numMedusa] = pick.toString();
@@ -89,7 +79,12 @@ var checkForStone = function() {
         //IF THE VALUE AND INDEX ARE OPPOSITE AND EQUAL, THAT MEDUSAS IS OUT.  
       $("#" + i).removeClass(imgClasses[i]).addClass(stoneClasses[i]).fadeOut(4000);
       //The out medusas are removed from the array
-      //     
+      //     .pop();
     }
   }
 };
+
+
+
+// var checkForWin = function() {
+//     if (medusas.length === 1 || medusas[0] === )

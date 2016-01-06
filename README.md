@@ -13,7 +13,7 @@
   
   
   
-   The user tries to win the game by not being eliminated when picking another Gorgon. A medusa can only be eliminated when each Medusa's selection is equal to eachother.  
+   The user tries to win the game by not being elimintaed when picking another Gorgon. A medusa can only be eliminated when each Medusa's selection is equal to eachother.  
    If you choose a Medusa and a Medusa chooses you, you and that Medusa are out.
 
 ### MVP  
@@ -43,7 +43,14 @@ The game is written in HTML, CSS and JavaScript.
 
 The Design of the game is hand drawn and interactive because when the Medusas are eliminated they visibly show it. 
 
-###URL
-[https://Miilkytea.github.io.git](https://Miilkytea.github.io.git)
+### Next Steps
+
+The game is incomplete. The users stories are unfinished so the game is pretty, but ambiguous. My goal is to finish the game with signifiers of: who picks whom, when the game ends, when the wnner wins or loses. Challenges for me were using arrays and for loops and knowing how to put functions with-in functions.
+
+### URL
+[http://miilkytea.github.io./](http://miilkytea.github.io./)
+
+ 
+
 
   
