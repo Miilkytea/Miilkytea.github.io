@@ -12,6 +12,7 @@ function Medusa(num, choice, stone) {
     $('#' + this.num).removeClass(imgClasses[this.num]).addClass(stoneClasses[this.num]).fadeOut(fadeOutTime);
     this.stone = true;
     this.choice = null;
+
   };
 
   this.hover = function () {
@@ -86,24 +87,32 @@ $('#rules').mouseleave(function() {
 /////////BUTTONS (FOUR OTHER MEDUSAS)
 
 $('#1').on('click', function() {
-  if ($("#0").hasClass(stoneClasses[0])) return;
-  playGame(this.id);
+  setTimeout(function() {
+    if ($("#0").hasClass(stoneClasses[0])) return;
+    playGame(this.id);
+  }, 4000);
 });
 
 
 $('#2').on('click', function() {
-  if ($("#0").hasClass(stoneClasses[0])) return;
-  playGame(this.id);
+  setTimeout(function() {
+    if ($("#0").hasClass(stoneClasses[0])) return;
+    playGame(this.id);
+  }, 4000);
 });
 
 $('#3').on('click', function() {
-  if ($("#0").hasClass(stoneClasses[0])) return;
-  playGame(this.id);
+  setTimeout(function() {
+    if ($("#0").hasClass(stoneClasses[0])) return;
+    playGame(this.id);
+  }, 4000);
 });
 
 $('#4').on('click', function() {
-  if ($("#0").hasClass(stoneClasses[0])) return;
-  playGame(this.id);
+  setTimeout(function() {
+    if ($("#0").hasClass(stoneClasses[0])) return;
+    playGame(this.id);
+  }, 4000);
 });
 
 ///RESTART FUNCTION TO CLEAR THE GAME
@@ -111,10 +120,12 @@ init();
 
 ///GAME STARTS, USER PICKED, OTHER MEDUSAS PICK
 var playGame = function(playerOneChoice) {
-  $('.color').remove();
-  medusaChoiceParty(playerOneChoice);
-  checkForMatches();
-  gameOver();
+  setTimeout(function() {
+    $('.color').remove();
+    medusaChoiceParty(playerOneChoice);
+    checkForMatches();
+    gameOver();
+  }, 4000);
 };
 
 var medusaChoiceParty = function (playerOneChoice) {
