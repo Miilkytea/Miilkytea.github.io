@@ -255,7 +255,10 @@ a {
 
 
 /*////////////////////////////////Media Query//////////////////////////////*/
-@media (max-width: 600px) {
+@media screen and (max-device-width: 414px)  
+              and (max-device-width: 736px) 
+              and (-webkit-min-device-pixel-ratio: 3) {
+
   .gorgons div {
     height: 200px;
     width: 240px;
@@ -264,4 +267,36 @@ a {
     display: inline-block;
     background-size: 110%;
   }
+  
+  .welcome {
+    color: #ffffff;
+    background: rgba(000, 111, 999, 0.65);
+    height: 750px;
+    position: absolute;
+    z-index: 2;
+    left: 20%;
+    top: 10%;
+    text-align: justify;
+    font-size: 2em;
+    padding: 20px 100px;
+    font-family: "Helvetica", san-serif;
+    cursor: pointer;
+    text-shadow: 1px 1px 30px rgba(000, 000, 999, .9);
+  }
+
+  .welcome h1 {
+    font-size: 1.3em;
+    text-align: center;
+    text-shadow: 1px 1px 40px rgba(000, 000, 999, .8);
+    font-family: 'Playfair Display SC', serif;
+    font-style: italic;
+  }
+
+  .welcome p,
+  h1 {
+    margin: 50px auto;
+  }
+
 }
+
+
