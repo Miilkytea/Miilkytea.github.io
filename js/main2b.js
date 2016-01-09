@@ -9,7 +9,7 @@ function Medusa(num, choice, stone) {
   this.stone = stone;
 
   this.turnToStone = function () {
-    $('#' + this.num).removeClass(imgClasses[this.num]).addClass(stoneClasses[this.num]);
+    $('#' + this.num).removeClass(imgClasses[this.num]).addClass(stoneClasses[this.num]).fadeOut(fadeOutTime);
     this.stone = true;
     this.choice = null;
 
@@ -154,7 +154,7 @@ var checkForMatches = function () {
       var imgNumPath = "css/images/" + medusas[currentChoice].num +".png";
       var idNum = $('#'+ currentMedusa.num);
       var imgIdNumPath = idNum.append("<img class='color' src ="+imgNumPath+">");
-       $('.color').fadeOut(5000);
+       // $('.color').fadeOut(5000);
 
     }
   }
