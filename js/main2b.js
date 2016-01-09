@@ -9,7 +9,7 @@ function Medusa(num, choice, stone) {
   this.stone = stone;
 
   this.turnToStone = function () {
-    $('#' + this.num).removeClass(imgClasses[this.num]).addClass(stoneClasses[this.num]).fadeOut(fadeOutTime);
+    $('#' + this.num).removeClass(imgClasses[this.num]).addClass(stoneClasses[this.num]);
     this.stone = true;
     this.choice = null;
 
